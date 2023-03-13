@@ -14,3 +14,8 @@ variable "region" {
   type    = string
   default = "eu-central-1"
 }
+
+variable "hvn_id" {
+  type    = string
+  default = "demo-hvn"
+} 

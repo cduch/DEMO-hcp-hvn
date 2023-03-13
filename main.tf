@@ -6,9 +6,9 @@ provider "hcp" {
 
 
 resource "hcp_hvn" "main" {
-  hvn_id         = local.hvn_id
+  hvn_id         = var.hvn_id
   cloud_provider = "aws"
-  region         = local.hvn_region
+  region         = var.region
   cidr_block     = "172.25.32.0/20"
 }
 
